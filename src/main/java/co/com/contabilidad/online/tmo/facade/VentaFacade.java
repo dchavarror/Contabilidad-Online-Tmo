@@ -1,0 +1,17 @@
+package co.com.contabilidad.online.tmo.facade;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import co.com.contabilidad.online.tmo.dao.IVenta;
+
+@Component
+public class VentaFacade {
+	
+	@Autowired
+	private IVenta venta;
+
+	public IVenta getVenta() {
+		return venta;
+	}
+}
